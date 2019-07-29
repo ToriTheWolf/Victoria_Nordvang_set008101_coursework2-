@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Cyphermania</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<div id="header">
+			<img src="header2.jpg" alt="Cyphermania">
+			</div>
+			<br>
+			<div id="main">
+			<h1>What is Cyphermania all about?</h1>
+			<p>This web application is for sending encrypted messages to whomever you may desire.</p>
+			<p>The cipher algorithms are designed to conceal your messages, but the ones in use are easy to decrypt</p>
+			<p>This is useful if you want to send secret messages to your friends, but not want someone random to pick up the messages.</p>
+			<p>This website is all about secrecy and safety. Therefore you will require a uk registered phone to sign up.</p>
+			<br>
+			<p>A cipher is a way of diguising what you're writing. We call it encryption.</p>
+			<p>The cipher is an algorithm which encrypts your message, so it's hard for the average person to intercept the message.</p>
+			<p>This is useful if you want to send secret messages to your friends, without someone intercepting it on the way.</p>
+			<p>Ciphers were invented a long time ago and was been originally used to conceal war plans from the enemy.</p>
+			<br>
+			<p>The ciphers on this website are really easy to crack, so do not use this on any inportant information.</p>
+			<br>
+			<br>
+			<h2>Atbash Cipher</h2>
+			<h3>How it works</h3>
+			<p>The Atbash cipher takes the alphabet and flips it. Abc becomes Zyx.</p>
+			<br>
+			<p>If your sencence is something like</p>
+			<p>"I have something to hide."</p>
+			<p>It would turn into:</p>
+			<p>"R szev hlnvgsrmt gl srwv."</p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<br>
+			<h2>Caesar Cipher</h2>
+			<h3>How it works</h3>
+			<p>The caesar cipher is not quite as easily explained. It moves through the alphabet at a chosen number.</p>
+			<p>If the number goes past the end of the alphabet, it will go back to the start and count from a.</p>
+			<br>
+			<p>If your number is 8, and your message something like:</p>
+			<p>"Kill the princess" </p>
+			<p>The result would be:</p>
+			<p>"Sqtt bpm xzqvkmaa"</p>
+			</div>
+			
+			<div id="footer">
+			<p>Made by Victoria Nordvang, Edinburgh Napier University student.</p>
+			<p>40330846@live.napier.ac.uk</p>
+			<p> Coursework 2 SET08101 Web Technologies Resubmission</p>
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Cyphermania</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>	
+			<div id="header">
+				<img src="header2.jpg" alt="Cyphermania">
+			</div>
+			<br>
+			<div id="main">
+				<form name="sendMsg" action="script.js" onsubmit="return validateForm()" method="validate">
+					<input type="text" name="fsendToUser" value="Username" required>
+					<br>
+					<input type="text" name="fpassSup" value="Message" required>
+					<br>
+					<p>Encryption type:</p>
+					<form name="encryption" action="script.js" onsubmit="return name">
+						<input type="radio" name="plain" value="Plaintext" checked>
+						<br>
+						<input type="radio" name="atbash" value="Atbash Cipher">
+						<br>
+						<input type="radio" name="caesar" value="Caesar Cipher">
+						<br>
+						<input type="submit" value="Send message">
+					</form>
+				</form>
+			</div>
+			<br>
+			<div id="footer">
+			<p>Made by Victoria Nordvang, Edinburgh Napier University student.</p>
+			<p>40330846@live.napier.ac.uk</p>
+			<p> Coursework 2 SET08101 Web Technologies Resubmission</p>
+			<a href="insertlinktoinformationhere"><p>General information can be found here</p>
+			</div>
+		</body>
