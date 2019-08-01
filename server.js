@@ -96,7 +96,30 @@ function atbash(str) {
 		return cryptMsg;
 	}
 }
-
+function rot13(str, num) {
+	num = 13;
+	var lCaseStr = str.toLowerCase();
+	var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	var newStr = '';
+	
+	for(var i = 0; i < lCaseStr.length; i++) {
+		var currentLetter = lCaseStr[i];
+		if(currentLetter === ' ') {
+			newStr += currentLetter;
+			continue;
+		
+		}
+		var currentIndex = alphabet.indexOf(currentLetter);
+		var newIndex = currentIndex + num;
+		if(newIndex > 25) newIndex = newIndex - 26;
+		if (newIndex < 0) newIndex = newIndex + 26;
+		if(str[i].toUpperCase()) {
+			newStr += alphabet[newIndex];
+		}
+		else newStr += alphabet[newIndex];
+	}
+	return newStr;
+});
 function caesarEncrypt(str,num) {
 	num = num % 26;
 	var lCaseStr = str.toLowerCase();
