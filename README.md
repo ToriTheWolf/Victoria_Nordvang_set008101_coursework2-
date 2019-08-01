@@ -8,6 +8,7 @@ npm install express
 npm install sqlite3
 
 This command will run the website locally on port 8081
+
 node.exe server.js
 
 Website will be running on localhost:8081
