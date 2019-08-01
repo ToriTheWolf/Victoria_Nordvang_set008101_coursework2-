@@ -46,18 +46,16 @@ app.post('/login', (req, res) => {
         }
     });
 });
-/* Failed attempt at signing up, working from log in.. 
+/*
 app.post('/signup', (req, res) => {
-	const username = req.body.username;
+    const username = req.body.username;
     const password = req.body.password;
-	let sql = "Insert into users(username, password) values(username, password); ";
-    db.get(sql,[username], function (err, row) {
-        if(password === row.password){
-            res.redirect('http://localhost:8081/logged/'+username)
-        }else{
-            res.redirect('http://localhost:8081/')
-        }
-    });
+    let sql = "Insert into users(username, password) values(?, ?)", ['username', 'password']`, ['C'], function(err) {
+		if (err) {
+			return console.log(err.message);
+		}
+		console.log(`A row has been inserted with rowid ${this.lastID}`);
+		db.close();
 });*/
 app.get('/logged/:username', (req, res) => {
     let sql = "Select * from messages where reciever = ?";
@@ -69,15 +67,18 @@ app.get('/logged/:username', (req, res) => {
         }
     });
 });
-/* Before testing if this works I need to find how to encrypt it and decrypt on the way out.
+/*
 app.post('/logged/sendMsg', (req, res) => {
-    let sql = "Insert into messages(sender, reciever, encryptionMethod, encryptedMessage) values(?)`, ['C'], function(err) {
+	var sender = req.body.username;
+	var reciever = req.body.send2user;
+	var enctyptionMethod = req.body.encryptionMethod;
+	var encryptedMessage = req.body.message;
+    let sql = "Insert into messages(sender, reciever, encryptionMethod, encryptedMessage) values(?, ?, ?, ?)", [sender, reciever, encryptionMethod, encryptedMessage]`, ['C'], function(err) {
 		if (err) {
 			return console.log(err.message);
 		}
 		console.log(`A row has been inserted with rowid ${this.lastID}`);
-	});
-	db.close();
+		db.close();
 });
 */
 /*
